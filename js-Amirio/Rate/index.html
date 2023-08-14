@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rima-TARH</title>
+  <link href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v4.0.0/dist/font-face.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="emoji-slider">
+    <ul>
+        <li>داغون</li>
+        <li>ناراضی</li>
+        <li>راضی</li>
+        <li>خوب</li>
+        <li>عالــــی</li>
+    </ul>
+    <div class="smiley">
+        <svg class="eye left" viewBox="0 0 18 22">
+            <path d="M12.6744144,18.0128897 C17.3794842,15.6567898 19.3333811,9.83072065 17.0385652,5 C15.7595661,7.57089081 13.5517099,9.64170285 10.4149967,11.2124361 C7.27828344,12.7831694 3.80661788,13.5564215 0,13.5321925 C2.2948159,18.3629131 7.9693445,20.3689896 12.6744144,18.0128897 Z"></path>
+        </svg>
+        <svg class="eye right" viewBox="0 0 18 22">
+            <path d="M12.6744144,18.0128897 C17.3794842,15.6567898 19.3333811,9.83072065 17.0385652,5 C15.7595661,7.57089081 13.5517099,9.64170285 10.4149967,11.2124361 C7.27828344,12.7831694 3.80661788,13.5564215 0,13.5321925 C2.2948159,18.3629131 7.9693445,20.3689896 12.6744144,18.0128897 Z"></path>
+        </svg>
+        <svg class="mouth" viewBox="0 0 64 28">
+            <path d="M32,2 C41.5729357,2 58,10.8218206 58,21 C50.2396023,18.9643641 41.5729357,17.9465462 32,17.9465462 C22.4270643,17.9465462 13.7603977,18.9643641 6,21 C6,10.8218206 22.4270643,2 32,2 Z"></path>
+        </svg>
+        <svg class="teeth" viewBox="0 0 64 28">
+            <path d="M32,7.83261436 C41.5729357,7.83261436 52.5729357,7.05507624 63,1.5 C63,10.3056732 46.3594035,14.5 32,14.5 C17.6405965,14.5 1,10.3056732 1,1.5 C11.4270643,7.05507624 22.4270643,7.83261436 32,7.83261436 Z"></path>
+        </svg>
+    </div>
+    <div class="slide">
+        <div></div>
+    </div>
+    <div class="bottom">
+        من
+        <ul>
+            <li>داغون</li>
+            <li>ناراضی</li>
+            <li>راضی</li>
+            <li>خوب</li>
+            <li>عالی</li>
+        </ul>
+           هستم.
+        <button>ذخیره کن</button>
+    </div>
+</div>
+
+<svg style="position: absolute; visibility: hidden;">
+    <defs>
+        <filter id="inset-shadow">
+            <feOffset dx='0' dy='3' />
+            <feGaussianBlur stdDeviation='1' result='offset-blur' />
+            <feComposite operator='out' in='SourceGraphic' in2='offset-blur' result='inverse' />
+            <feFlood flood-color='black' flood-opacity='.5' result='color' />
+            <feComposite operator='in' in='color' in2='inverse' result='shadow' />
+            <feComposite operator='over' in='shadow' in2='SourceGraphic' />
+        </filter>
+    </defs>
+</svg>
+  <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

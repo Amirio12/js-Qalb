@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+font-family: shabnam,'IBM Plex Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: 0;
+
+  background: linear-gradient(17deg, #0632a1, #021441);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 12s ease infinite;
+  -moz-animation: AnimationName 12s ease infinite;
+  animation: AnimationName 12s ease infinite;
+}
+
+.zdog-canvas {
+  cursor: move;
+  position : absolute;
+  top:0px;
+  display:block;
+  width:100%;
+  height:100%;
+  background 
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+
+h1{
+  color:#29fc9b;
+  font-size:5vw;
+  text-align:center;
+}
+
+h1 span{
+  font-weight:700;
+}
